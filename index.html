@@ -11,6 +11,21 @@
 
   gtag('config', 'UA-116924853-1');
 </script>
+<style>
+#video {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+}
+ #video iframe {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   left: 0;
+   top: 0;
+ } 
+</style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -44,11 +59,10 @@
       </a>
       <span class="d-none d-lg-block name">Hazel Doughty</span>
       <span class="d-none d-lg-block">
-          <p>Second year PhD student in Computer Vision at the University of Bristol.</p>
-          <p>hazel.doughty@bristol.ac.uk</p>
+          <p>Third year PhD student in Computer Vision at the University of Bristol.</p>
+          <p>hazel.doughty *at* bristol.ac.uk</p>
           <p>Visual Information Laboratory
-            Merchant Venturers Building
-            Woodland Road, BS8 1UB
+            One Cathedral Square, BS1 5DD
             Bristol</p>
         </span>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -90,19 +104,18 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="col-md-6 resume-content mr-auto p-2">
               <h3 class="mb-0">The Pros and Cons: Rank-aware Temporal Attention for Skill Determination in Long Videos</h3>
-              <div class="subheading mb-3">Hazel Doughty, Walterio Mayol-Cuevas and Dima Damen</div>
+              <div class="subheading mb-3">Hazel Doughty, Walterio Mayol-Cuevas and Dima Damen in IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019.</div>
               <p>     We present a new model to determine relative skill from long videos, through learnable temporal attention modules. Previous work formulates skill determination for common tasks as a ranking problem, yet measures skill from randomly sampled video segments. We believe this approach to be limiting since many parts of the video are irrelevant to assessing skill, and there may be variability in the skill exhibited throughout a video. Assessing skill from a single section may not reflect the overall skill in the video. We propose to train rank-specific temporal attention modules, learned with only video-level supervision, using a novel rank-aware loss function. In addition to attending to task-relevant video parts, our proposed loss jointly trains two attention modules to separately attend to video parts which are indicative of higher (pros) and lower (cons) skills. We evaluate the approach on the public EPIC-Skills dataset and additionally collect and annotate a larger dataset for skill determination with five previously unexplored tasks. Our method outperforms previous approaches and classic softmax attention on both datasets by over 4% pairwise accuracy, and as much as 12% on individual tasks. We also demonstrate our model's ability to attend to rank-aware parts of the video. </p>
 <p><a href="https://arxiv.org/abs/1812.05538">[arXiv]</a> <a href="https://github.com/hazeld/rank-aware-attention-network">[Dataset]</a>
             </div>
-            <div class="col-md-6 p-2 embed-responsive embed-responsive-16by9">
+            <div class="col-md-6 p-2 embed-responsive">
+              <div id="video">
               <iframe class="embed-responsive-item" width="100%" height="auto" max-width="560" max-height="315" src="https://www.youtube.com/embed/eSJsiqOQTKc" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
             </div>
           </div>
         </div>
         <div class="resume-item d-flex flex-column flex-md-row mb-5">
-            <div class="col-md-6 p-2 embed-responsive embed-responsive-16by9">
-              <iframe class="embed-responsive-item" width="100%" height="auto" max-width="560" max-height="315" src="https://www.youtube.com/embed/Dj6Y3H0ubDw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            </div>
             <div class="col-md-6 resume-content mr-auto p-2">
               <h3 class="mb-0">Scaling Egocentric Vision: The EPIC-KITCHENS Dataset</h3>
               <div class="subheading mb-3">Dima Damen, Hazel Doughty, Giovanni Maria Farinella, Sanja Fidler, Antonino Furnari, Evangelos Kazakos, Davide Moltisanti, Jonathan Munro, Toby Perrett, Will Price, Michael Wray in European Conference on Computer Vision (<b>ECCV</b>), 2018. (Oral) </div>
@@ -111,6 +124,11 @@
 <p></p>
 <p></p>
           </div>
+          <div class="col-md-6 p-2 embed-responsive">
+            <div id="video">
+              <iframe class="embed-responsive-item" width="100%" height="auto" max-width="560" max-height="315" src="https://www.youtube.com/embed/Dj6Y3H0ubDw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
+            </div>
         </div>
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
@@ -125,8 +143,10 @@ We demonstrate the robustness of our approach via sensitivity analysis of its pa
 We see this work as effort toward the automated organization of how-to video collections and overall, generic skill determination in video.</p>
 <p><a href="https://arxiv.org/abs/1703.09913">[arXiv]</a> <a href="bib/whos_better.html">[Bibtex]</a> <a href="https://drive.google.com/file/d/1oX0dPM5IP638nB0YHt4L70aigIdqqpYr/view?usp=sharing">[Dataset]</a>
             </div>
-            <div class="col-md-6 p-2 embed-responsive embed-responsive-16by9">
+            <div class="col-md-6 p-2 embed-responsive">
+              <div id="video">
               <iframe class="embed-responsive-item" width="100%" height="auto" max-width="560" max-height="315" src="https://www.youtube.com/embed/R3QoZ-FltUQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+              </div>
             </div>
           </div>
         </div>
