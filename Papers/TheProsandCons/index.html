@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Pros and Cons: Rank-aware Temporal Attention for Skill Determination in Long Videos</title>
+<!--[if IE]>
+<link href="../shared/style-ie.css" rel="stylesheet" type="text/css">
+<![endif]-->
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="The%20Pros%20and%20Cons%20/scroll.js"></script>
+</head>
+
+<body>
+<a id="top"></a>
+<div id="wrapper">
+<div id="header">
+<div id="journal">Computer Vision and Pattern Recognition (CVPR) 2019</div>
+<div id="title"><a href="" class="nounderline">The Pros and Cons: Rank-aware Temporal Attention for Skill Determination in Long Videos</a></div>
+
+
+<table id="authors">
+<tbody><tr>
+<td><a class="nounderline" href="http://hazeldoughty.github.io">Hazel Doughty</a></td>
+<td><a class="nounderline" href="http://people.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a></td>
+<td><a class="nounderline" href="http://people.cs.bris.ac.uk/~damen//">Dima Damen</a></td>
+</tr>
+<!--<tr class="mail">
+<td><img src="../shared/mails/bmasia_rr.png"></td>
+</tr>-->
+
+<tr>
+<td colspan="7" id="affiliation">
+University of Bristol
+</td></tr>
+</tbody></table>
+
+
+<a href="" class="nounderline"><img style="width:550px;" src="concept.png" alt="Teaser" id="teaser" class="center"></a>
+
+
+<table id="navigation">
+<tbody><tr>
+<td><a class="nounderline" href="#abstract">Abstract</a></td>
+<td><a class="nounderline" href="#video-container">Video</a></td>
+<td><a class="nounderline" href="#downloads">Downloads</a></td>
+<td><a class="nounderline" href="#bibtex">Bibtex</a></td>
+<td><a class="nounderline" href="#related">Related</a></td>
+</tr>
+</tbody></table>
+</div>
+
+
+<div id="content">
+
+<h1><a class="nounderline" id="abstract" href="#top">Abstract</a></h1>
+<p>
+We present a new model to determine relative skill from long videos, through learnable temporal attention modules. 
+Skill determination is formulated as a ranking problem, making it suitable for common and generic tasks. However, 
+for long videos, parts of the video are irrelevant for assessing skill, and there may be variability in the skill 
+exhibited throughout a video. We therefore propose a method which assesses the relative overall level of skill in 
+a long video by attending to its skill-relevant parts. </p>
+<p>
+Our approach trains temporal attention modules, learned with only video-level supervision, using a novel rank-aware 
+loss function. In addition to attending to task-relevant video parts, our proposed loss jointly trains two attention 
+modules to separately attend to video parts which are indicative of higher (pros) and lower (cons) skill. We evaluate 
+our approach on the EPIC-Skills dataset and additionally annotate a larger dataset from YouTube videos for skill 
+determination with five previously unexplored tasks. Our method outperforms previous approaches and classic softmax 
+attention on both datasets by over 4% pairwise accuracy, and as much as 12% on individual tasks. We also demonstrate 
+our model’s ability to attend to rank-aware parts of the video.
+
+<div id="video-container">
+<!---<iframe  width="853" height="480" src="https://www.youtube.com/embed/eSJsiqOQTKc" frameborder="0" allowfullscreen></iframe>-->
+<video width="853" height="480" controls>
+<source src="teaser.mp4">
+</video>
+</div>
+
+
+</p><h1><a class="nounderline" id="downloads" href="#top">Downloads</a></h1>
+<ul>
+<li>Paper <a class="nounderline" target="_blank" href="TheProsandCons.pdf">[PDF]</a> <a class="nounderline" target="_blank" href="https://arxiv.org/abs/1812.05538">[ArXiv]</a></li>
+<li>Supplementary <a class="nounderline" target="_blank" href="TheProsandCons-supp.mp4">[Video]</a></li>
+<li>Code and data <a class="nounderline" target="_blank" href="https://github.com/hazeld/rank-aware-attention-network">[Coming soon]</a></li>
+</ul>
+
+<h1><a class="nounderline" id="bibtex" href="#top">Bibtex</a></h1>
+&nbsp;
+<pre>
+<tt>@article{Doughty_2019_CVPR,
+    author    = {Doughty, Hazel and Mayol-Cuevas, Walterio and Damen, Dima},
+    title     = {{T}he {P}ros and {C}ons: {R}ank-aware {T}emporal {A}ttention for {S}kill 
+                 {D}etermination in {L}ong {V}ideos},
+    booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year      = {2019}
+}</tt>
+</pre>
+
+
+
+<h1><a class="nounderline" id="related" href="#top">Related</a></h1>
+<ul>
+<li>2018: <a class="nounderline" target="_blank" href="https://dimadamen.github.io/Skill/">Who's Better? Who's Best?: Pairwise Deep Ranking for Skill Determination</a></li>
+</ul>
+
+<h1><a class="nounderline" id="acks" href="#top">Acknowledgements</a></h1>
+<p>
+This research is supported by an EPSRC DTP and EPSRC GLANCE (EP/N013964/1)
+
+</p>
+
+
+</div>
+</div>
+
+
+</body></html>
