@@ -112,7 +112,7 @@
               <h3 class="mb-0">Action Modifiers: Learning from Adverbs in Instrucional Videos</h3>
               <div class="subheading mb-3">Hazel Doughty, Ivan Laptev, Walterio Mayol-Cuevas and Dima Damen in IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2020.</div>
               <p>     We present a method to learn a representation for adverbs from instructional videos using weak supervision from the accompanying narrations. Key to our method is the fact that the visual representation of the adverb is highly dependant on the action to which it applies, although the same adverb will modify multiple actions in a similar way. For instance, while 'spread quickly' and 'mix quickly' will look dissimilar, we can learn a common representation that allows us to recognize both, among other actions. We formulate this as an embedding problem, and use scaled dot-product attention to learn from weakly-supervised video narrations. We jointly learn adverbs as invertible transformations operating on the embedding space, so as to add or remove the effect of the adverb. As there is no prior work on weakly supervised learning from adverbs, we gather paired action-adverb annotations from a subset of the HowTo100M dataset for 6 adverbs: quickly/slowly, finely/coarsely, and partially/completely. Our method outperforms all baselines for video-to-adverb retrieval with a performance of 0.719 mAP. We also demonstrate our model's ability to attend to the relevant video parts in order to determine the adverb for a given action. </p>
-<p><a href="https://arxiv.org/abs/1912.06617">[arXiv]</a> [Dataset and Code coming soon!]</p>
+<p><a href="Papers/ActionModifiers/">[Webpage]</a><a href="https://arxiv.org/abs/1912.06617">[arXiv]</a> <a href="https://github.com/hazeld/action-modifiers">[Dataset]</a> [Code coming soon]</p>
               </div>
               <div class="col-md-6 p-2 img-responsive">
                   <img class="img-fluid concept-img" src="img/action_mods_concept.png" style="margin-left:auto; margin-right:auto; display:block; max-width:70%">
@@ -123,7 +123,7 @@
               <h3 class="mb-0">The Pros and Cons: Rank-aware Temporal Attention for Skill Determination in Long Videos</h3>
               <div class="subheading mb-3">Hazel Doughty, Walterio Mayol-Cuevas and Dima Damen in IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2019.</div>
               <p>     We present a new model to determine relative skill from long videos, through learnable temporal attention modules. Previous work formulates skill determination for common tasks as a ranking problem, yet measures skill from randomly sampled video segments. We believe this approach to be limiting since many parts of the video are irrelevant to assessing skill, and there may be variability in the skill exhibited throughout a video. Assessing skill from a single section may not reflect the overall skill in the video. We propose to train rank-specific temporal attention modules, learned with only video-level supervision, using a novel rank-aware loss function. In addition to attending to task-relevant video parts, our proposed loss jointly trains two attention modules to separately attend to video parts which are indicative of higher (pros) and lower (cons) skills. We evaluate the approach on the public EPIC-Skills dataset and additionally collect and annotate a larger dataset for skill determination with five previously unexplored tasks. Our method outperforms previous approaches and classic softmax attention on both datasets by over 4% pairwise accuracy, and as much as 12% on individual tasks. We also demonstrate our model's ability to attend to rank-aware parts of the video. </p>
-<p><a href="Papers/TheProsandCons">[Webpage]</a> <a href="https://arxiv.org/abs/1812.05538">[arXiv]</a> <a href="https://github.com/hazeld/rank-aware-attention-network">[Dataset]</a> 
+<p><a href="Papers/TheProsandCons">[Webpage]</a> <a href="https://arxiv.org/abs/1812.05538">[arXiv]</a> <a href="https://github.com/hazeld/rank-aware-attention-network">[Dataset & Code]</a> 
             </div>
             <div class="col-md-6 p-2 embed-responsive">
               <div id="video">
@@ -176,8 +176,9 @@ We see this work as effort toward the automated organization of how-to video col
 
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="resume-content mr-auto">
+                  <h3 class="mb-0">2020</h3>
+                  <p>Doughty, H., Laptev, I., Mayol-Cuevas, W., Damen, D., 'Action Modifiers: Learning from Adverbs in Instructional Videos'. Computer Vision and Pattern Recognition (CVPR). 2020</p>
                   <h3 class="mb-0">2019</h3>
-                  <p>Doughty, H., Laptev, I., Mayol-Cuevas, W., Damen, D., 'Action Modifiers: Learning from Adverbs in Instructional Videos'. arXiv preprint arXiv:1912.06617</p>
                   <p>Doughty, H., Mayol-Cuevas, W., Damen, D., 'The Pros and Cons: Rank-aware Temporal Attention for Skill Determination in Long Video'. Computer Vision and Pattern Recognition (CVPR). 2019</p>
               <h3 class="mb-0">2018</h3>
               <p>Damen, D., Doughty, H., Farinella, G.M., Fidler, S., Furnari, A., Kazakos, E., Moltisanti, D., Munro, J., Perrett, T., Price, W. and Wray, M., 2018. Scaling Egocentric Vision: The EPIC-KITCHENS Dataset. The European Conference on Computer Vision (ECCV). 2018 
