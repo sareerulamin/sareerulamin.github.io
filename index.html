@@ -95,6 +95,7 @@
           <p class="mb-5">I'm a fourth year PhD student in Computer Vision at the University of Bristol. My area of interest is Video Understanding, specifically in Skill Determination and Egocentric Video. I'm supervised by <a href="http://www.bris.ac.uk/engineering/people/walterio-w-mayol-cuevas/index.html">Prof. Walterio Mayol-Cuevas</a> and <a href="https://dimadamen.github.io/">Dr. Dima Damen</a> and began my PhD in September 2016. I completed my MEng in Computer Science from the University of Bristol in June 2016.</p>
           <h3 class="mb-5">News</h3>
           <ul>
+              <li> Feb 2020: <a href="https://arxiv.org/abs/1912.06617">Action Modifers: Learning from Adverbs in Instructional Videos</a> is accepted in CVPR 2020.</li>
               <li> Jan 2020: I'm co-organizing the <a href="https://sites.google.com/view/wicvworkshop-cvpr2020/">Women in Computer Vision</a> and <a href="https://eyewear-computing.org/EPIC_CVPR20/">Egocentric Perception, Interaction and Computing</a> workshops at CVPR 2020.</li>
                   <li> Dec 2019: Our new paper on action modifiers is available on <a href="https://arxiv.org/abs/1912.06617">arXiv</a></li>
               <li> June 2019: We're presenting our paper on rank-aware temporal attention for skill determination at CVPR 2019.
@@ -109,9 +110,9 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
               <div class="col-md-6 resume-content mr-auto p-2">
               <h3 class="mb-0">Action Modifiers: Learning from Adverbs in Instrucional Videos</h3>
-              <div class="subheading mb-3">Hazel Doughty, Ivan Laptev, Walterio Mayol-Cuevas and Dima Damen</div>
+              <div class="subheading mb-3">Hazel Doughty, Ivan Laptev, Walterio Mayol-Cuevas and Dima Damen in IEEE Conference on Computer Vision and Pattern Recognition (<b>CVPR</b>), 2020.</div>
               <p>     We present a method to learn a representation for adverbs from instructional videos using weak supervision from the accompanying narrations. Key to our method is the fact that the visual representation of the adverb is highly dependant on the action to which it applies, although the same adverb will modify multiple actions in a similar way. For instance, while 'spread quickly' and 'mix quickly' will look dissimilar, we can learn a common representation that allows us to recognize both, among other actions. We formulate this as an embedding problem, and use scaled dot-product attention to learn from weakly-supervised video narrations. We jointly learn adverbs as invertible transformations operating on the embedding space, so as to add or remove the effect of the adverb. As there is no prior work on weakly supervised learning from adverbs, we gather paired action-adverb annotations from a subset of the HowTo100M dataset for 6 adverbs: quickly/slowly, finely/coarsely, and partially/completely. Our method outperforms all baselines for video-to-adverb retrieval with a performance of 0.719 mAP. We also demonstrate our model's ability to attend to the relevant video parts in order to determine the adverb for a given action. </p>
-<p><a href="https://arxiv.org/abs/1912.06617">[arXiv]</a>
+<p><a href="https://arxiv.org/abs/1912.06617">[arXiv]</a> [Dataset and Code coming soon!]</p>
               </div>
               <div class="col-md-6 p-2 img-responsive">
                   <img class="img-fluid concept-img" src="img/action_mods_concept.png" style="margin-left:auto; margin-right:auto; display:block; max-width:70%">

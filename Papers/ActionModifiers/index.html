@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>The Pros and Cons: Rank-aware Temporal Attention for Skill Determination in Long Videos</title>
+<!--[if IE]>
+<link href="../shared/style-ie.css" rel="stylesheet" type="text/css">
+<![endif]-->
+<link href="style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="The%20Pros%20and%20Cons%20/scroll.js"></script>
+</head>
+
+<body>
+<a id="top"></a>
+<div id="wrapper">
+<div id="header">
+<div id="journal">Computer Vision and Pattern Recognition (CVPR) 2020</div>
+<div id="title"><a href="" class="nounderline">Action Modifiers: Learning from Adverbs in Instructional Videos</a></div>
+
+
+<table id="authors">
+<tbody><tr>
+    <td><a class="nounderline" href="http://hazeldoughty.github.io">Hazel Doughty</a></td>
+    <td><a class="nounderline" href="https://www.di.ens.fr/~laptev/">IVvan Laptev</a></td>
+<td><a class="nounderline" href="http://people.cs.bris.ac.uk/~wmayol/">Walterio Mayol-Cuevas</a></td>
+<td><a class="nounderline" href="http://people.cs.bris.ac.uk/~damen//">Dima Damen</a></td>
+</tr>
+<!--<tr class="mail">
+<td><img src="../shared/mails/bmasia_rr.png"></td>
+</tr>-->
+
+<tr>
+<td colspan="7" id="affiliation">
+University of Bristol
+</td></tr>
+</tbody></table>
+
+
+<a href="" class="nounderline"><img style="width:550px;" src="concept.png" alt="Teaser" id="teaser" class="center"></a>
+
+
+<table id="navigation">
+<tbody><tr>
+<td><a class="nounderline" href="#abstract">Abstract</a></td>
+<td><a class="nounderline" href="#video-container">Video</a></td>
+<td><a class="nounderline" href="#downloads">Downloads</a></td>
+<td><a class="nounderline" href="#bibtex">Bibtex</a></td>
+<td><a class="nounderline" href="#related">Related</a></td>
+</tr>
+</tbody></table>
+</div>
+
+
+<div id="content">
+
+<h1><a class="nounderline" id="abstract" href="#top">Abstract</a></h1>
+<p>
+    We present a method to learn a representation for adverbs from instructional videos using weak supervision from the accompanying narrations. Key to our method is the fact that the visual representation of the adverb is highly dependant on the action to which it applies, although the same adverb will modify multiple actions in a similar way. For instance, while 'spread quickly' and 'mix quickly' will look dissimilar, we can learn a common representation that allows us to recognize both, among other actions.</p>
+<p>We formulate this as an embedding problem, and use scaled dot-product attention to learn from weakly-supervised video narrations. We jointly learn adverbs as invertible transformations operating on the embedding space, so as to add or remove the effect of the adverb. As there is no prior work on weakly supervised learning from adverbs, we gather paired action-adverb annotations from a subset of the HowTo100M dataset for 6 adverbs: quickly/slowly, finely/coarsely, and partially/completely. Our method outperforms all baselines for video-to-adverb retrieval with a performance of 0.719 mAP. We also demonstrate our model's ability to attend to the relevant video parts in order to determine the adverb for a given action. </p>
+
+<div id="video-container">
+<!---<iframe  width="853" height="480" src="https://www.youtube.com/embed/rajo0x7WF-c" frameborder="0" allowfullscreen></iframe>-->
+<video width="853" height="480" controls>
+<source src="teaser.mp4">
+</video>
+</div>
+
+<!--
+</p><h1><a class="nounderline" id="poster" href="#top">Poster</a></h1>
+<p></p>
+<a href=ActionModifiersPoster.pdf" class="nounderline"><img style="width:100%;" src="ActionModifiersPoster.png" alt="Poster" id="poster_img" class="center"></a>
+-->
+
+
+</p><h1><a class="nounderline" id="downloads" href="#top">Downloads</a></h1>
+<ul>
+<li>Paper <a class="nounderline" target="_blank" href="ActionModifiers.pdf">[PDF]</a> <a class="nounderline" target="_blank" href="https://arxiv.org/abs/1912.06617">[ArXiv]</a></li>
+<li>Supplementary <a class="nounderline" target="_blank" href="ActionModifiers-supp.pdf">[PDF]</a></li> <a class="nounderline" target="_blank" href="ActionModifiers-supp.mp4">[Video]</a></li>
+<li>Code and data <a class="nounderline" target="_blank" href="https://github.com/hazeld/action-modifiers">[Data, Code coming soon]</a></li>
+</ul>
+
+<h1><a class="nounderline" id="bibtex" href="#top">Bibtex</a></h1>
+&nbsp;
+<pre>
+<tt>@article{doughty2020action,
+    author    = {Doughty, Hazel and Laptev, Ivan and Mayol-Cuevas, Walterio and Damen, Dima},
+    title     = {{A}ction {M}odifiers: {L}earning from {A}dverbs in {I}nstructional {V}ideos},
+    booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+    year      = {2020}
+}</tt>
+</pre>
+
+
+
+<!---<h1><a class="nounderline" id="related" href="#top">Related</a></h1>
+<ul>
+<li>2018: <a class="nounderline" target="_blank" href="https://dimadamen.github.io/Skill/">Who's Better? Who's Best?: Pairwise Deep Ranking for Skill Determination</a></li>
+</ul>-->
+
+<h1><a class="nounderline" id="acks" href="#top">Acknowledgements</a></h1>
+<p>
+This research is supported by an EPSRC DTP, <a class="nounderline" href="https://gow.epsrc.ukri.org/NGBOViewGrant.aspx?GrantRef=EP/N013964/1">EPSRC GLANCE (EP/N013964/1) </a>, Louis Vuitton ENS Chair on Artifical Intelligence, the MSR-Inria joint lab and the French government under management of Agence Nationale de la Recherche as part of the \"Investissements d’avenir\" program, reference ANR-19-P3IA-0001 (PRAIRIE 3IA Institute)
+
+</p>
+
+
+</div>
+</div>
+
+
+</body></html>
